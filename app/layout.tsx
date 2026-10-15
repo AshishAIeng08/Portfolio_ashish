@@ -1,0 +1,3 @@
+import type { Metadata } from 'next'; import './globals.css'; import {Nav,Footer} from '../components';
+export const metadata:Metadata={title:{default:'Ashish Kumar Singh | Software Engineering Portfolio',template:'%s | Ashish Kumar Singh'},description:'Software Engineer, Frontend Developer, DevOps and Data Analytics portfolio for Ashish Kumar Singh.',openGraph:{title:'Ashish Kumar Singh | Multi-role Engineering Portfolio',description:'Software engineering, frontend, DevOps and data analytics work.',type:'website'}};
+export default function Layout({children}:{children:React.ReactNode}){return <html lang="en"><body><div className="grain"/><Nav/><main>{children}</main><Footer/></body></html>}
